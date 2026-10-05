@@ -1,0 +1,37 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Datasets and prepared data
+data/
+prepared/
+prepared_data/
+raw_data/
+
+# Training outputs
+runs/
+checkpoints/
+evaluation_100way/
+logs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Numerical caches
+*.npy
+*.npz
+*.pkl
+
+# Local files
+.env
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
