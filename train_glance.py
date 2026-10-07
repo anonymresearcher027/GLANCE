@@ -710,7 +710,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
             "gpu": torch.cuda.get_device_name(0) if torch.cuda.is_available() else None,
             "packages": {
                 name: __import__("importlib.metadata", fromlist=["version"]).version(name)
-                for name in ("numpy", "pandas", "transformers", "tokenizers")
+                for name in ("numpy", "pandas")
             },
         },
         "phase_definitions": list(PHASES),
